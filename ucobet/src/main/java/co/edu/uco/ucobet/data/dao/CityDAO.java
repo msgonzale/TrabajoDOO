@@ -9,7 +9,4 @@ public interface CityDAO
 extends CreateDAO<CityEntity>, RetrieveDAO<CityEntity, UUID>, UpdateDAO<CityEntity>, DeleteDAO<UUID>{
 
 
-
-//System.out.println();
-
 }
