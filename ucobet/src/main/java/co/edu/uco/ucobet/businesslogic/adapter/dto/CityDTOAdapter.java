@@ -4,11 +4,11 @@ import co.edu.uco.ucobet.businesslogic.adapter.Adapter;
 import co.edu.uco.ucobet.domain.CityDomain;
 import co.edu.uco.ucobet.dto.CityDTO;
 
-public final class cityDTOAdapter implements Adapter<CityDomain, CityDTO> {
+public final class CityDTOAdapter implements Adapter<CityDomain, CityDTO> {
 	
-	private static final Adapter<CityDomain, CityDTO> instance =  new cityDTOAdapter();
+	private static final Adapter<CityDomain, CityDTO> instance =  new CityDTOAdapter();
 	
-	private cityDTOAdapter() {
+	private CityDTOAdapter() {
 		
 	}
 

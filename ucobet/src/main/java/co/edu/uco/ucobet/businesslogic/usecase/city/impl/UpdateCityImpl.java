@@ -1,7 +1,5 @@
 package co.edu.uco.ucobet.businesslogic.usecase.city.impl;
 
-import co.edu.uco.crosscutting.exceptions.UcoApplicationException;
-import co.edu.uco.crosscutting.exceptions.enums.Layer;
 import co.edu.uco.crosscutting.helpers.ObjectHelper;
 import co.edu.uco.ucobet.businesslogic.adapter.entity.CityEntityAdapter;
 import co.edu.uco.ucobet.businesslogic.usecase.city.UpdateCity;
@@ -19,6 +17,9 @@ public final class UpdateCityImpl implements UpdateCity {
 
 	@Override
 	public void execute(final CityDomain data) {
+		
+		
+		
 		
 		var cityEntity = CityEntityAdapter.getCityEntityAdapter().adaptSource(data);
 		daoFactory.getCityDAO().update(cityEntity);
