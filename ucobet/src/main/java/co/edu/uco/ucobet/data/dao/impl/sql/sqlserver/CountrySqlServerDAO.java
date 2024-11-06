@@ -11,6 +11,7 @@ import co.edu.uco.crosscutting.helpers.TextHelper;
 import co.edu.uco.crosscutting.helpers.UUIDHelper;
 import co.edu.uco.ucobet.crosscutting.exceptions.DataUcoBetException;
 import co.edu.uco.ucobet.data.dao.CountryDAO;
+import co.edu.uco.ucobet.data.dao.impl.sql.SqlDAO;
 import co.edu.uco.ucobet.entity.CountryEntity;
 
 public final class CountrySqlServerDAO<preparedStatement> extends SqlDAO implements CountryDAO {

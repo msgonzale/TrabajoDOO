@@ -62,5 +62,7 @@ public final class RegisterNewCityImpl implements RegisterNewCity{
 		this.daoFactory = daoFactory;
 	}
 
+
+
 }
 

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.UUID;
 
 import co.edu.uco.ucobet.data.dao.StateDAO;
+import co.edu.uco.ucobet.data.dao.impl.sql.SqlDAO;
 import co.edu.uco.ucobet.entity.StateEntity;
 
 

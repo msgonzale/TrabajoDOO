@@ -7,6 +7,7 @@ import java.util.UUID;
 
 import co.edu.uco.ucobet.crosscutting.exceptions.DataUcoBetException;
 import co.edu.uco.ucobet.data.dao.CityDAO;
+import co.edu.uco.ucobet.data.dao.impl.sql.SqlDAO;
 import co.edu.uco.ucobet.entity.CityEntity;
 
 

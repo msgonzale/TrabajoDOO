@@ -17,7 +17,7 @@ public abstract class DAOFactory {
 		}
 		default:
 			var userMessage = "se ha presentado un problema inesperado  tratando de llevar a cabo la operacion deseada.";
-			var technicalMessage = TextHelper.concat ("no existe una factory implementadao para", source.toString()) ;
+			var technicalMessage = TextHelper.concat ("no existe una factory implementadao para", source.toString());
 			throw DataUcoBetException.crear(userMessage, technicalMessage);
 		}
 	

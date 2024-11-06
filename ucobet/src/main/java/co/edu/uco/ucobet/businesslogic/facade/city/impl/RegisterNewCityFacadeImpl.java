@@ -8,7 +8,6 @@ import co.edu.uco.ucobet.crosscutting.exceptions.UcoBetException;
 import co.edu.uco.ucobet.data.dao.DAOFactory;
 import co.edu.uco.ucobet.data.dao.enums.DAOSource;
 import co.edu.uco.ucobet.dto.CityDTO;
-import co.edu.uco.ucobet.crosscutting.exceptions.BusinessLogicUcoBetException;
 
 public final class RegisterNewCityFacadeImpl implements RegisterNewCityFacade {
 
@@ -22,6 +21,8 @@ public final class RegisterNewCityFacadeImpl implements RegisterNewCityFacade {
 			
 			var registerNewCityUseCase = new RegisterNewCityImpl(factory);
 			var cityDomain = CityDTOAdapter.getCityDTOAdapter().adaptSource(data);
+				
+		
 			
 			registerNewCityUseCase.execute(cityDomain);
 			
